@@ -39,5 +39,10 @@ switch($_GET['test']){
 		print "var i = '".$i."'";
 		print "\n</script>";
 		break;
+	case 10:
+		print "<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js'></script>\n<body ng-app>\n";
+		print "<div>".htmlentities($i)."</div>\n";
+		print "</body>";
+		break;
 	}
 ?>
