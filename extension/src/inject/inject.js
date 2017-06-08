@@ -2,11 +2,11 @@
 
 class Xsshamster {
 
-  constructor () {
+  constructor() {
     this.listener()
   }
 
-  listener () {
+  listener() {
     chrome.runtime.onMessage.addListener((instruction, sender, sendResponse) => {
       console.log(instruction)
       if (this.validateInstruction(instruction)) {
@@ -17,16 +17,14 @@ class Xsshamster {
     })
   }
 
-  execute (instruction) {
+  execute(instruction) {
     this[instruction.function]()
   }
-
-  validateInstruction (instruction) {
+  validateInstruction(instruction) {
     return typeof instruction == 'object' && typeof instruction.function != 'undefined'
   }
-  
-  scan () {
-    alert('Scan triggered.')
+  scan() {
+    new Scanner
   }
 }
 
