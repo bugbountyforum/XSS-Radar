@@ -26,7 +26,7 @@ switch($_GET['test']){
 		break;
 	case 7:
 		print "<script>\n";
-		print $i
+		print $i;
 		print "\n</script>";
 		break;
 	case 8:
