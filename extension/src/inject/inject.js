@@ -8,11 +8,8 @@ class Xsshamster {
 
   listener() {
     chrome.runtime.onMessage.addListener((instruction, sender, sendResponse) => {
-      console.log(instruction)
       if (this.validateInstruction(instruction)) {
         this.execute(instruction)
-      } else {
-        console.error('Invalid instruction', instruction)
       }
     })
   }
