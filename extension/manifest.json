@@ -1,9 +1,9 @@
 {
-  "name": "CHANGE THIS : Extension boilerplate",
+  "name": "XSS Hamster",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created with the awesome extensionizr.com",
-  "homepage_url": "http://extensionizr.com",
+  "description": "XSS Hamster - Cross-site scripting discovery.",
+  "homepage_url": "https://bugbountyforum.com/xsshamster",
   "icons": {
     "16": "icons/icon16.png",
     "48": "icons/icon48.png",
@@ -26,7 +26,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.google.com/*"
+        "*://*/*"
       ],
       "js": [
         "src/inject/inject.js"
