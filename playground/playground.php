@@ -1,5 +1,6 @@
 <?php
 $i = $_GET['injection'];
+
 switch($_GET['test']){
 	case 1:
 		print $i;
@@ -38,7 +39,5 @@ switch($_GET['test']){
 		print "var i = '".$i."'";
 		print "\n</script>";
 		break;
-	
-
-}
+	}
 ?>
