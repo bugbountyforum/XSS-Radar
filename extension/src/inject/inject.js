@@ -20,9 +20,11 @@ class Xsshamster {
   execute(instruction) {
     this[instruction.function]()
   }
+
   validateInstruction(instruction) {
     return typeof instruction == 'object' && typeof instruction.function != 'undefined'
   }
+
   scan() {
     new Scanner
   }
