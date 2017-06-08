@@ -1,17 +1,13 @@
 <!doctype html>
-<style type="text/css">
-	#mainPopup {
-		padding: 10px;
-		height: 200px;
-		width: 400px;
-		font-family: Helvetica, Ubuntu, Arial, sans-serif;
-	}
-	h1 {
-		font-size: 2em;
-	}
-</style>
-
-<div id="mainPopup">
-<h1>Hello extensionizr!</h1>
-<p>To shut this popup down, edit the manifest file and remove the "default popup" key. To edit it, just edit ext/browser_action/browser_action.html. The CSS is there, too.</p>
-</div>
+<head>
+	<link href="browser_action.css" rel="stylesheet" />
+	<script src="browser_action.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Fuzz this page</h1>
+		<p>Test this web page for cross-site scripting vulnerabilities!</p>
+		<div class="button js-xsshamster-fuzz">Fuzz</div>
+	</div>
+</body>
+</html>

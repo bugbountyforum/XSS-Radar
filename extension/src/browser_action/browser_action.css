@@ -1,0 +1,31 @@
+body {
+  font-family: Helvetica, Ubuntu, Arial, sans-serif;
+  width: 300px;
+}
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 1em;
+}
+
+h1, p {
+  text-align: center;
+}
+
+p {
+  font-size: 15px;
+}
+
+.button {
+  border-radius: 4px;
+  width: 100%;
+  padding: 1em 2em;
+  background: #51AA50;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
