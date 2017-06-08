@@ -1,4 +1,5 @@
 # XSS Hamster
+XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities.
 
 ## How do I install this?
 INSTRUCTIONS HERE.
