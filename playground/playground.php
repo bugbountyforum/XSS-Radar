@@ -25,21 +25,26 @@ switch($_GET['test']){
 		print "<tag attribute='$i'></tag>";
 		break;
 	case 7:
+		$i = str_replace("<script>", "", $i);
+		$i = str_replace("</script>", "", $i);
+		print $i;
+		break;
+	case 8:
 		print "<script>\n";
 		print $i;
 		print "\n</script>";
 		break;
-	case 8:
+	case 9:
 		print "<script>\n";
 		print "var i = \"$i\"";
 		print "\n</script>";
 		break;
-	case 9:
+	case 10:
 		print "<script>\n";
 		print "var i = '".$i."'";
 		print "\n</script>";
 		break;
-	case 10:
+	case 11:
 		print "<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js'></script>\n<body ng-app>\n";
 		print "<div>".htmlentities($i)."</div>\n";
 		print "</body>";
