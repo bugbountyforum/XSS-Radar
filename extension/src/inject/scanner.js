@@ -12,9 +12,13 @@ class Scanner {
   fuzz () {
     window.addEventListener('message', (event) => {
       setTimeout(() => {
-        let frame = event.data.substr(4)
-        let link = document.getElementById(frame).getAttribute('data-url')
-        this.report.add(link)
+        var frame = event.data.substr(4)
+        if (event.data.substring(0, 4) == 'xss_') {
+          let link = document.getElementById(frame).getAttribute('data-url')
+          this.report.add(link)
+        } else {
+          console.log(frame.substring(0, 4))
+        }
       }, 1000)
     })
     this.parameters.get().forEach((param) => {
@@ -43,7 +47,7 @@ class Scanner {
     frame.style.display = 'none'
     document.body.appendChild(frame)
     frame.contentWindow.document.open()
-    frame.contentWindow.document.write('<script>function alert(m){parent.postMessage("xss_" + m, "*")}</script>' + html)
+    frame.contentWindow.document.write('<script>function alert(m){setTimeout(function(){parent.postMessage("xss_" + m, "*")},1000);}</script>' + html)
     frame.contentWindow.document.close()
   }
 }
