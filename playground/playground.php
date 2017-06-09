@@ -49,5 +49,9 @@ switch($_GET['test']){
 		print "<div>".htmlentities($i)."</div>\n";
 		print "</body>";
 		break;
+	case 12:
+		$i = htmlspecialchars($i);
+		print "<a href=\"$i\">Click Here</a>";
+		break;
 	}
 ?>
