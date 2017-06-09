@@ -11,6 +11,7 @@ class Parameters {
   }
 
   find () {
+    this.detect_url(document.URL)
     document.querySelectorAll('*').forEach((element) => {
       this.attributes.forEach((attribute) => {
         this['detect_' + attribute](element)
@@ -22,6 +23,10 @@ class Parameters {
     return Array.from(
       new Set(this.parameters)
     )
+  }
+
+  detect_url (url) {
+    this.detect_url_paramters(url)
   }
 
   detect_name (element) {
