@@ -1,11 +1,16 @@
 # XSS Hamster
 XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities.
 
-## How do I install this?
-INSTRUCTIONS HERE.
+## Installation instructions.
+1. Go to `chrome://extensions/`
+2. Enable developers mode.
+3. `git clone https://github.com/bugbountyforum/XSS-Hamster`
+4. Press on `load unpacked extension..`
+5. Open the `extension` folder.
 
-## How do I use this?
-INSTRUCTIONS HERE.
+## How to use.
+![](example.png)
+Click on the icon and press on "Fuzz"!
 
 ### Who made this?
 This tool is a bug bounty forum project with the following contributors:
