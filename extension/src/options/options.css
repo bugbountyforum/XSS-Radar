@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #eee;
+  font-size: 15px;
+}
+
+.header {
+  width: 100%;
+  background: #3367D6;
+  padding: 1em;
+  color: #fff;
+}
+
+.header .logo {
+  font-size: 19px;
+}

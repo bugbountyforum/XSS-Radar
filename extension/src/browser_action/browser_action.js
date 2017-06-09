@@ -12,8 +12,18 @@ class browser_action {
         });
       }
     );
+
+    /*results = chrome.windows.create({
+      url: '/src/options/index.html',
+      type: 'popup',
+      width: 500,
+      height: 500
+    }, (w) => {
+      //document.write(w)
+    })*/
   }
 }
+
 document.addEventListener('DOMContentLoaded', function(event) {
   new browser_action()
 })
