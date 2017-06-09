@@ -30,7 +30,12 @@
         "*://*/*"
       ],
       "js": [
-        "src/inject/inject.js", "src/inject/parameters.js", "src/inject/payloads.js",  "src/inject/url.js", "src/inject/scanner.js"
+        "src/inject/inject.js",
+        "src/inject/parameters.js",
+        "src/inject/payloads.js",
+         "src/inject/report.js", 
+         "src/inject/url.js",
+         "src/inject/scanner.js"
       ]
     }
   ]
