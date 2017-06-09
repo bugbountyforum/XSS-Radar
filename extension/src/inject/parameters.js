@@ -51,13 +51,13 @@ class Parameters {
   }
 
   detect_url_paramters (href) {
-    var url = href.split('?')[1]
-    if (typeof url != 'undefined') {
-      var vars = url.split('&')
-      for (var i = 0; i < vars.length; i++) {
-        let param = vars[i].split('=')[0]
-        this.add(param[0])
-      }
-    }
+    if(!href.includes('?')) return
+    var pairs = href.substring(href.indexOf('?') + 1).split('&');
+    for (var i = 0; i < pairs.length; i++) {
+        if (!pairs[i])
+            continue;
+        var pair = pairs[i].split('=');
+        this.add(decodeURIComponent(pair[0]))
+     }
   }
 }

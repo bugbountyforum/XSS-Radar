@@ -1,9 +1,8 @@
-'use strict'
-
 class Xsshamster {
 
   constructor() {
     this.listener()
+    this.scanner = new Scanner();
   }
 
   listener() {
@@ -23,8 +22,8 @@ class Xsshamster {
   }
 
   scan() {
-    new Scanner
+    this.scanner.fuzz();
   }
 }
 
-new Xsshamster
+xssHamster = new Xsshamster();
