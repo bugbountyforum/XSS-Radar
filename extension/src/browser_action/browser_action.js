@@ -6,8 +6,7 @@ class browser_action {
 
   scan () {
     chrome.tabs.query(
-      { currentWindow: true, active: true },
-      function (tabs) {
+      { currentWindow: true, active: true }, (tabs) => {
         chrome.tabs.sendMessage(tabs[0].id, {
           function: 'scan'
         });
