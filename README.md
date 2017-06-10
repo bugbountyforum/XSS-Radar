@@ -3,20 +3,19 @@ XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scr
 
 ## How do I install it?
 ### Supported browsers
-At present, we're only supporting Google Chrome because it's generally more used. We hope to support Firefox in the future.
+At present, we're only supporting Google Chrome because of its widespread usage.
+We hope to support Firefox in the future.
 
 ### Installation instructions
-Before starting, please clone this repository to your desired location:
-* `git clone https://github.com/bugbountyforum/XSS-Hamster`
-
-1. Visit `chrome://extensions/`
-2. Enable Developer Mode (via the checkbox)
-3. Select "Load Unpacked Extension"
-4. Finally, locate and select the `extension` folder
+1. `git clone https://github.com/bugbountyforum/XSS-Hamster`
+2. Now, visit `chrome://extensions/`
+3. Enable Developer Mode (via the checkbox)
+4. Select "Load Unpacked Extension"
+5. Finally, locate and select the `extension` folder
 
 ## How do I use it?
-![Screenshot of extension Fuzz window](example.png)
-To get started, simply look for the extension icon and select **Fuzz**!
+Simply look for the extension icon and select **Fuzz**!
+<img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
 ## How do I contribute?
 ### Contexts and tests
