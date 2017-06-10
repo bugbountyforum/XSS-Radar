@@ -17,6 +17,7 @@ XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scr
 Visit a target page, look for the extension, and select **Fuzz**!
 <img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
+---
 ## How do I contribute?
 * If you're a Bug Bounty Forum member, please drop @smiegles a message so you can start contributing.
 * If not, feel free to get in touch via Twitter!
@@ -37,7 +38,7 @@ We currently support the following XSS payload classes. These can be found in [*
 * Script injections 
 * Generic tag strings
 
-### Who made this?
+## Who made this?
 This tool is a bug bounty forum project with the following contributors:
 - Ibram Marzouk
 - Anshuman Bhartiya
