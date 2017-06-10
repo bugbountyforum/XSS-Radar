@@ -1,12 +1,16 @@
 # XSS Hamster
-XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities. It's also the first tool developed by the [Bug Bounty Forum](https://bugbountyforum.com) community! 
+
+XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities.
+It's also the first tool developed by the [Bug Bounty Forum](https://bugbountyforum.com) community! 
+
+[![](https://img.shields.io/github/issues/bugbountyforum/XSS-Hamster.svg)]() 
+[![](https://img.shields.io/github/issues-pr-closed-raw/bugbountyforum/XSS-Hamster.svg)]()
+[![GitHub contributors](https://img.shields.io/github/contributors/bugbountyforum/XSS-Hamster.svg)]()
+[![license](https://img.shields.io/github/license/bugbountyforum/XSS-Hamster.svg)]()
 
 ## How do I install it?
-### Supported browsers
-* At present, we're only supporting the widely used **Google Chrome**.
-* We hope to support Firefox in the future.
+At present, we're only supporting the widely used **Google Chrome**. We hope to support Firefox in the future.
 
-### Installation instructions
 1. `git clone https://github.com/bugbountyforum/XSS-Hamster`
 2. Now, visit `chrome://extensions/`
 3. Enable Developer Mode (via the checkbox)
@@ -17,7 +21,6 @@ XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scr
 Visit a target page, look for the extension, and select **Fuzz**!
 <img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
----
 ## How do I contribute?
 * If you're a Bug Bounty Forum member, please drop @smiegles a message so you can start contributing.
 * If not, feel free to get in touch via Twitter!
