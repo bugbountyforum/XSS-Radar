@@ -25,7 +25,17 @@ Visit a target page, look for the extension, and select **Fuzz**!
 ### Contexts and tests
 We've developed contexts – and their respective tests – in a modular fashion. By doing so, we've made it easy to contribute new payloads, tests, and methodologies.
 
-**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). (to be described)
+**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the scanner module looks for applicable contexts and deploys the required payloads. 
+
+Here's an example. Link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
+
+```
+{
+    'type': 'a', // link/anchor type
+    'matches': ['href'], // URI attribute
+    'file': 'link.js' // payload file
+}
+```
 
 **Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to ensure the tool's effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
 
