@@ -53,3 +53,4 @@ This tool is a Bug Bounty Forum project with the following contributors:
 * Filipe Reis
 * gradius
 * Olivier beg
+* Yasin Soliman
