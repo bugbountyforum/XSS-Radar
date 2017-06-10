@@ -1,23 +1,19 @@
 # XSS Hamster
 
-XSS Hamster is a tool that detects parameters and fuzzes them for cross-site scripting vulnerabilities.
+XSS Hamster is a tool that detects parameters and fuzzes them for [cross-site scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) vulnerabilities.
 It's also the first tool developed by the [Bug Bounty Forum](https://bugbountyforum.com) community! 
-
-[![](https://img.shields.io/github/issues/bugbountyforum/XSS-Hamster.svg)]() 
-[![](https://img.shields.io/github/issues-pr-closed-raw/bugbountyforum/XSS-Hamster.svg)]()
-[![license](https://img.shields.io/github/license/bugbountyforum/XSS-Hamster.svg)]()
 
 ## How do I install it?
 At present, we're only supporting the widely used **Google Chrome**. We hope to support Firefox in the future.
 
-1. `git clone https://github.com/bugbountyforum/XSS-Hamster`
-2. Now, visit `chrome://extensions/`
-3. Enable Developer Mode (via the checkbox)
+1. First, `git clone https://github.com/bugbountyforum/XSS-Hamster`
+2. Visit `chrome://extensions/`
+3. Enable Developer Mode via the checkbox
 4. Select "Load Unpacked Extension"
 5. Finally, locate and select the `extension` folder
 
 ## How do I use it?
-Visit a target page, look for the extension, and select **Fuzz**!
+Visit a target page, open the extension and select **Fuzz!**
 <img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
 ## How do I contribute?
@@ -25,9 +21,9 @@ Visit a target page, look for the extension, and select **Fuzz**!
 * If not, feel free to get in touch via Twitter!
 
 ### Contexts and tests
-We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new payloads, tests, and methodologies.
+We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new methodologies to the Scanner module.
 
-**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner module looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a prebuilt context which specifically matches against these:
+**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a prebuilt context which specifically matches against these:
 
 ```
 {
@@ -42,9 +38,9 @@ We've developed contexts – and their respective tests – in a fully modular f
 ### Payloads
 We've integrated the following XSS payload classes. These can be found in [**extension/src/payloads**](https://github.com/bugbountyforum/XSS-Hamster/tree/master/extension/src/payloads).
 
-* AngularJS
+* AngularJS [template injection](http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html)
     * All versions with a vulnerable Expression Sandbox are supported
-* Link-based URI
+* Link-based URIs
 * Script injections 
 * Generic tag strings
 
