@@ -18,18 +18,23 @@ Simply look for the extension icon and select **Fuzz**!
 <img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
 ## How do I contribute?
-### Contexts and tests
-Contexts are... (to be described)
+If you're a Bug Bounty Forum member, please drop @smiegles a message so you can start contributing. If not, feel free to get in touch via Twitter!
 
-Tests are...
+### Contexts and tests
+We've developed contexts – and their respective tests – in a modular fashion. This means that it's easy to contribute new payloads or methodologies.
+
+**Contexts** are... (to be described)
+
+**Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to ensure the tool's effectiveness. At present, we test for classic injections, JavaScript injection, tag breakouts, and templating vulnerabilities.
 
 ### Payloads
 We currently support the following XSS payload classes. These can be found in [**extension/src/payloads**](https://github.com/bugbountyforum/XSS-Hamster/tree/master/extension/src/payloads).
 
-* AngularJS (all versions with a vulnerable Expression Sandbox)
+* AngularJS
+    * All versions with a vulnerable Expression Sandbox are supported
 * Link-based URI
 * Script injections 
-* Generic XSS tag strings
+* Generic tag strings
 
 ### Who made this?
 This tool is a bug bounty forum project with the following contributors:
