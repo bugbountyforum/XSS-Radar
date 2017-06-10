@@ -23,7 +23,7 @@ Visit a target page, open the extension and select **Fuzz!**
 ### Contexts and tests
 We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new methodologies to the Scanner module.
 
-**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a prebuilt context which specifically matches against these:
+**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon fuzzing, the Scanner searches for applicable contexts on the target and deploys the right payloads. For instance, link-based XSS bugs often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
 
 ```
 {
@@ -45,11 +45,11 @@ We've integrated the following XSS payload classes. These can be found in [**ext
 * Generic tag strings
 
 ## Who made this?
-This tool is a bug bounty forum project with the following contributors:
-- Ibram Marzouk
-- Anshuman Bhartiya
-- Rafal Janicki
-- Jack Cable
-- Filipe Reis
-- gradius
-- Olivier beg
+This tool is a Bug Bounty Forum project with the following contributors:
+* Ibram Marzouk
+* Anshuman Bhartiya
+* Rafal Janicki
+* Jack Cable
+* Filipe Reis
+* gradius
+* Olivier beg
