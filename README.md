@@ -27,7 +27,7 @@ Visit a target page, look for the extension, and select **Fuzz**!
 ### Contexts and tests
 We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new payloads, tests, and methodologies.
 
-**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner module looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
+**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner module looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a prebuilt context which specifically matches against these:
 
 ```
 {
@@ -37,10 +37,10 @@ We've developed contexts – and their respective tests – in a fully modular f
 }
 ```
 
-**Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to ensure the tool's effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
+**Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to support development and ensure the tool's general effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
 
 ### Payloads
-We currently support the following XSS payload classes. These can be found in [**extension/src/payloads**](https://github.com/bugbountyforum/XSS-Hamster/tree/master/extension/src/payloads).
+We've integrated the following XSS payload classes. These can be found in [**extension/src/payloads**](https://github.com/bugbountyforum/XSS-Hamster/tree/master/extension/src/payloads).
 
 * AngularJS
     * All versions with a vulnerable Expression Sandbox are supported
