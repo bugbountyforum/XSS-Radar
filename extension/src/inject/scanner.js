@@ -36,7 +36,7 @@ class Scanner {
           payloadsToTest.forEach((payload) => {
             payloads.push({
               id: id,
-              payload: payload.replace('alert()', 'alert(' + id + ')')
+              payload: payload.replace('{id}', id)
             })
             id++;
           })
