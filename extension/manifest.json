@@ -35,10 +35,11 @@
         "src/inject/parameters.js",
         "src/inject/scanner.js",
         "src/inject/inject.js",
-         "src/payloads/contexts.js",
-         "src/payloads/general.js",
-         "src/payloads/link.js",
-         "src/payloads/script.js"
+        "src/payloads/contexts.js",
+        "src/payloads/general.js",
+        "src/payloads/link.js",
+        "src/payloads/script.js",
+        "src/payloads/angular.js"
       ]
     }
   ]

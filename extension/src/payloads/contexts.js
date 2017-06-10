@@ -5,6 +5,11 @@ xssHamster.scanner.contexts = [
     'file': 'general.js'
   },
   {
+    'type': 'angular',
+    'matches': ['*'],
+    'file': 'angular.js'
+  },
+  {
     'type': 'script',
     'matches': ['*'],
     'file': 'script.js'
@@ -13,5 +18,5 @@ xssHamster.scanner.contexts = [
     'type': 'a',
     'matches': ['href'],
     'file': 'link.js'
-  }
+  },
 ]

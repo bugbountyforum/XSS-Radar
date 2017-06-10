@@ -94,6 +94,11 @@ class Scanner {
     if (response.includes(payload)) {
       console.log('Using payloads for type general')
       payloadsToTest=payloadsToTest.concat(this.payloads.general)
+      //dont forget about angular
+      if (window.location="javascript:typeof angular != 'undefined'"){
+        console.log("Using payloads for type angular")
+        payloadsToTest=payloadsToTest.concat(this.payloads.angular)
+      }
     }
     this.prepareDOM(response, payload, (node, type) => {
       console.log('found match with ' + node.tagName + type.typeName);
