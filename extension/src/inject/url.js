@@ -37,7 +37,7 @@ class Url {
 
   // returns the url with the specified params
   updateUrl(url, params) {
-    return url.split('?')[0] + '?' + Object.keys(params).map(k => k + '=' + encodeURIComponent(params[k])).join('&');
+    return url.split('?')[0] + '?' + Object.keys(params).map(k => k + '=' + params[k]).join('&');
   }
 
 }
