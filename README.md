@@ -5,7 +5,6 @@ It's also the first tool developed by the [Bug Bounty Forum](https://bugbountyfo
 
 [![](https://img.shields.io/github/issues/bugbountyforum/XSS-Hamster.svg)]() 
 [![](https://img.shields.io/github/issues-pr-closed-raw/bugbountyforum/XSS-Hamster.svg)]()
-[![GitHub contributors](https://img.shields.io/github/contributors/bugbountyforum/XSS-Hamster.svg)]()
 [![license](https://img.shields.io/github/license/bugbountyforum/XSS-Hamster.svg)]()
 
 ## How do I install it?
@@ -26,11 +25,9 @@ Visit a target page, look for the extension, and select **Fuzz**!
 * If not, feel free to get in touch via Twitter!
 
 ### Contexts and tests
-We've developed contexts – and their respective tests – in a modular fashion. By doing so, we've made it easy to contribute new payloads, tests, and methodologies.
+We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new payloads, tests, and methodologies.
 
-**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the scanner module looks for applicable contexts and deploys the required payloads. 
-
-Here's an example. Link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
+**Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon launch, the Scanner module looks for applicable contexts and deploys the required payloads. For instance, link-based XSS vulnerabilities often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
 
 ```
 {
