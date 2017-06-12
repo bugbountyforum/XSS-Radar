@@ -9,16 +9,17 @@ class Scanner {
   }
 
   fuzz () {
+    console.log('Found the following parameters:')
     console.log(this.parameters.get())
     this.report = new Report
     window.addEventListener('message', (event) => {
       setTimeout(() => {
         var frame = event.data.substr(4)
-        console.log(event)
         if (event.data.substring(0, 4) == 'xss_') {
           let link = document.getElementById(frame).getAttribute('data-url')
           this.report.add(link)
         } else {
+          console.log('Could not detect event:')
           console.log(frame.substring(0, 4))
         }
       }, 1000)
@@ -41,7 +42,7 @@ class Scanner {
             id++;
           })
           payloads.forEach((payload) => {
-            console.log(payload)
+            console.log('testing payload ' + payload.payload + ' with param ' + param)
             this.test(this.target, param, payload.payload, payload.id)
           })
         });
@@ -101,7 +102,7 @@ class Scanner {
       }
     }
     this.prepareDOM(response, payload, (node, type) => {
-      console.log('found match with ' + node.tagName + type.typeName);
+      console.log('found match with ' + node.tagName + ', ' + type.typeName);
       // test to see if this matches one of our contexts
       for (var i=0; i < this.contexts.length; i++) {
         if(this.contexts[i].type.toUpperCase() == node.tagName.toUpperCase()) {

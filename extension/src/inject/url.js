@@ -6,6 +6,7 @@ class Url {
 
   // returns an array of query parameters
   getQueryParams(url) {
+      if(url.indexOf('?') == -1) return {};
       var request = {};
       var pairs = url.substring(url.indexOf('?') + 1).split('&');
       for (var i = 0; i < pairs.length; i++) {
@@ -21,22 +22,19 @@ class Url {
   // TODO: look in url as well
   appendStringToParam(url, param, string) {
     console.log(param)
-    var originalParams = this.getQueryParams(url);
-    var updatedParams = {};
-    for (var key in originalParams) {
-      if (Object.prototype.hasOwnProperty.call(originalParams, key)) {
-          if (key == param) {
-            updatedParams[key] = originalParams[key] + string;
-          } else {
-            updatedParams[key] = originalParams[key];
-          }
-      }
+    var params = this.getQueryParams(url);
+    if(params[param]) { //param is in url, append to original param
+      params[param] = params[param] + string;
+    } else {
+      params[param] = string;
     }
-    return this.updateUrl(url, updatedParams);
+    return this.updateUrl(url, params);
   }
 
   // returns the url with the specified params
   updateUrl(url, params) {
+    console.log('updating with url: ' + url)
+    console.log(params)
     return url.split('?')[0] + '?' + Object.keys(params).map(k => k + '=' + params[k]).join('&');
   }
 
