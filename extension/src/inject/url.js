@@ -21,7 +21,6 @@ class Url {
   // Identify parameters of query
   // TODO: look in url as well
   appendStringToParam(url, param, string) {
-    console.log(param)
     var params = this.getQueryParams(url);
     if(params[param]) { //param is in url, append to original param
       params[param] = params[param] + string;
@@ -33,8 +32,6 @@ class Url {
 
   // returns the url with the specified params
   updateUrl(url, params) {
-    console.log('updating with url: ' + url)
-    console.log(params)
     return url.split('?')[0] + '?' + Object.keys(params).map(k => k + '=' + params[k]).join('&');
   }
 

@@ -41,6 +41,9 @@ class Scanner {
             })
             id++;
           })
+          if (payloads.length == 0) {
+            console.log('Payload ' + param + ' does not seem to be reflected.')
+          }
           payloads.forEach((payload) => {
             console.log('testing payload ' + payload.payload + ' with param ' + param)
             this.test(this.target, param, payload.payload, payload.id)
