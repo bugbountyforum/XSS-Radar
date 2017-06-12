@@ -72,7 +72,14 @@ class Scanner {
     frame.style.display = 'none'
     document.body.appendChild(frame)
     frame.contentWindow.document.open()
-    frame.contentWindow.document.write('<script>function alert(m){setTimeout(function(){parent.postMessage("xss_" + m, "*")},1000);}</script>' + html)
+    frame.contentWindow.document.write(`<script>function alert(m){setTimeout(function(){parent.postMessage("xss_" + m, "*")},1000);}
+      setTimeout(function() {
+      document.querySelectorAll('a').forEach((element) => {
+       var href = element.getAttribute('href')
+       if (href && href.indexOf('javascript:') == 0) element.click()
+       var onmouseover = element.getAttribute('onmouseover')
+       if (onmouseover && onmouseover.indexOf('javascript:') == 0) element.onmouseover()
+     })}, 1000)</script>` + html)
     frame.contentWindow.document.close()
   }
 
