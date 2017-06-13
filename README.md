@@ -1,7 +1,6 @@
 <img src="https://user-images.githubusercontent.com/4115778/27087337-a1668948-504c-11e7-9bbb-761d0a6f8cc0.png" height="250"></img>
 
-XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.
-It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
+XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
 
 ## How do I install it?
 At present, we're only supporting the widely used **Google Chrome**. We hope to support Firefox in the future.
@@ -21,7 +20,7 @@ Visit a target page, open the extension and select **Fuzz!**
 * If not, feel free to get in touch via Twitter!
 
 ### Contexts and tests
-We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new methodologies to the Scanner module.
+We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new methodologies to Radar's Scanner module.
 
 **Contexts** are found in `contexts.js` (inside `extension/src/payloads/`). Upon fuzzing, the Scanner searches for applicable contexts on the target and deploys the right payloads. For instance, link-based XSS bugs often rely on injection within the `href` attribute, so we've added a context which specifically matches against these:
 
@@ -33,7 +32,7 @@ We've developed contexts – and their respective tests – in a fully modular f
 }
 ```
 
-**Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to support development and ensure the tool's general effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
+**Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to support development and ensure Radar's effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
 
 ### Payloads
 We've integrated the following XSS payload classes. These can be found in <a href="https://github.com/bugbountyforum/XSS-Radar/tree/master/extension/src/payloads">extension/src/payloads</a>.
