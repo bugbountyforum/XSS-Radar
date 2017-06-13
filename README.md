@@ -1,5 +1,5 @@
 <center>
-<img src="https://user-images.githubusercontent.com/4115778/27087279-7ae27a2a-504c-11e7-92aa-d0aee598da00.png" height="200"></img>
+<img src="https://user-images.githubusercontent.com/4115778/27087337-a1668948-504c-11e7-9bbb-761d0a6f8cc0.png" height="300"></img>
 </center>
 
 XSS Radar is a tool that detects parameters and fuzzes them for [cross-site scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) vulnerabilities.
