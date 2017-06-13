@@ -1,4 +1,5 @@
 * {
+  font-family: Verdana;
   box-sizing: border-box;
 }
 body {
@@ -9,7 +10,7 @@ body {
 
 .header {
   width: 100%;
-  background: #3367D6;
+  background: #ff4a4a;
   padding: 1em;
   color: #fff;
 }
