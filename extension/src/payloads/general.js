@@ -1,4 +1,4 @@
-xssHamster.scanner.payloads.general = [
+xssRadar.scanner.payloads.general = [
 '<img src=x onerror=alert({id})>',
 '<script>alert({id})</script>',
 '"><img src=x onerror=alert({id})>',

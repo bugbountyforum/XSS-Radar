@@ -1,6 +1,6 @@
 class browser_action {
   constructor () {
-    const button = document.querySelector('.js-xsshamster-fuzz')
+    const button = document.querySelector('.js-xssradar-fuzz')
     button.addEventListener('click', this.scan)
   }
 

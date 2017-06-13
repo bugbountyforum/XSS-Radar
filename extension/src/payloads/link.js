@@ -1,3 +1,3 @@
-xssHamster.scanner.payloads.link = [
+xssRadar.scanner.payloads.link = [
   'javascript:alert({id})//'
 ]

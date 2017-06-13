@@ -1,4 +1,4 @@
-class Xsshamster {
+class XssRadar {
 
   constructor() {
     this.listener()
@@ -26,4 +26,4 @@ class Xsshamster {
   }
 }
 
-xssHamster = new Xsshamster();
+xssRadar = new XssRadar();

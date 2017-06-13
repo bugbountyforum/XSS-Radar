@@ -1,4 +1,4 @@
-xssHamster.scanner.payloads.script = [
+xssRadar.scanner.payloads.script = [
   '\';alert({id});',
   'alert({id});',
   "';alert({id})//",

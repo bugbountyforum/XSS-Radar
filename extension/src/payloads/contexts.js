@@ -1,4 +1,4 @@
-xssHamster.scanner.contexts = [
+xssRadar.scanner.contexts = [
   {
     'type': 'general',
     'matches': ['*'],
