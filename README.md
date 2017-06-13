@@ -1,6 +1,6 @@
-# XSS Hamster
+# XSS Radar
 
-XSS Hamster is a tool that detects parameters and fuzzes them for [cross-site scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) vulnerabilities.
+XSS Radar is a tool that detects parameters and fuzzes them for [cross-site scripting](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)) vulnerabilities.
 It's also the first tool developed by the [Bug Bounty Forum](https://bugbountyforum.com) community! 
 
 ## How do I install it?
