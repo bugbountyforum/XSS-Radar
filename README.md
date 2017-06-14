@@ -13,7 +13,7 @@ At present, we're only supporting the widely used **Google Chrome**. We hope to 
 
 ## How do I use it?
 Visit a target page, open the extension and select **Fuzz!**
-<img src="example.png" alt="Screenshot of extension Fuzz window" height="450"/>
+<img src="https://user-images.githubusercontent.com/4115778/27141364-df47a638-511f-11e7-8838-968e496a0d0f.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
 ## How do I contribute?
 * If you're a Bug Bounty Forum member, please drop @smiegles a message so you can start contributing.
