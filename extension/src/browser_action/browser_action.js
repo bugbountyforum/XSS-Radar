@@ -13,6 +13,8 @@ class browser_action {
       }
     );
 
+    chrome.browserAction.setIcon({path: '/icons/icon19_active.png'});
+
     /*results = chrome.windows.create({
       url: '/src/options/index.html',
       type: 'popup',
@@ -26,4 +28,5 @@ class browser_action {
 
 document.addEventListener('DOMContentLoaded', function(event) {
   new browser_action()
+  chrome.browserAction.setIcon({path: '/icons/icon19.png'});
 })
