@@ -1,0 +1,3 @@
+- [ ] I have searched for duplicate or closed issues.
+- [ ] Operating system and version:
+- [ ] Browser version:
