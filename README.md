@@ -3,13 +3,13 @@
 XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
 
 ## How do I install it?
-At present, we're only supporting the widely used **Google Chrome**. We hope to support Firefox in the future.
+At present, we're only supporting the widely used **Google Chrome**. XSS Radar takes the form of a browser extension, so we hope to support Firefox in the future.
 
 1. First, `git clone https://github.com/bugbountyforum/XSS-Radar`
 2. Visit `chrome://extensions/`
 3. Enable Developer Mode via the checkbox
 4. Select "Load Unpacked Extension"
-5. Finally, locate and select the `extension` folder
+5. Finally, locate and select the inner `extension` folder
 
 ## How do I use it?
 Visit a target page, open the extension and select **Fuzz!**
@@ -32,7 +32,7 @@ We've developed contexts – and their respective tests – in a fully modular f
 **Tests** are found within the `playground` subdirectory. The XSS Playground contains a variety of cross-site scripting scenarios designed to support development and ensure Radar's effectiveness. At present, we test for classic vectors, JavaScript injection, tag breakouts, and templating vulnerabilities.
 
 ### Payloads
-We've integrated the following XSS payload classes. These can be found in <a href="https://github.com/bugbountyforum/XSS-Radar/tree/master/extension/src/payloads">extension/src/payloads</a>.
+We've integrated the following reflected payload classes. These can be found in <a href="https://github.com/bugbountyforum/XSS-Radar/tree/master/extension/src/payloads">extension/src/payloads</a>.
 
 * AngularJS [template injection](http://blog.portswigger.net/2016/01/xss-without-html-client-side-template.html)
     * All versions with a vulnerable Expression Sandbox are supported
