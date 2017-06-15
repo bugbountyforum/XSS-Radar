@@ -1,5 +1,7 @@
+'use strict'
+
 class Url {
-  
+
   get (url, param, payload) {
     return this.appendStringToParam(url, param, payload)
   }

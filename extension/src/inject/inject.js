@@ -1,3 +1,5 @@
+'use strict'
+
 class XssRadar {
 
   constructor() {
@@ -26,4 +28,4 @@ class XssRadar {
   }
 }
 
-xssRadar = new XssRadar();
+var xssRadar = new XssRadar();

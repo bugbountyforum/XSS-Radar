@@ -1,3 +1,5 @@
+'use strict'
+
 class browser_action {
   constructor () {
     const button = document.querySelector('.js-xssradar-fuzz')
@@ -12,15 +14,6 @@ class browser_action {
         });
       }
     );
-
-    /*results = chrome.windows.create({
-      url: '/src/options/index.html',
-      type: 'popup',
-      width: 500,
-      height: 500
-    }, (w) => {
-      //document.write(w)
-    })*/
   }
 }
 

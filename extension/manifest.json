@@ -9,7 +9,6 @@
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
   "background": {
     "page": "src/bg/background.html",
     "persistent": true
@@ -30,7 +29,7 @@
         "*://*/*"
       ],
       "js": [
-        "src/inject/report.js", 
+        "src/inject/report.js",
         "src/inject/url.js",
         "src/inject/parameters.js",
         "src/inject/scanner.js",
