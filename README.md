@@ -51,3 +51,15 @@ XSS Radar is a Bug Bounty Forum project with the following contributors. It's co
 * gradius
 * Olivier beg
 * Yasin Soliman
+
+---
+
+## FAQ
+
+### Can I use my own payloads?
+
+Yes, you can add your own payloads in [extension/src/payloads](https://github.com/bugbountyforum/XSS-Radar/tree/master/extension/src/payloads).
+
+### What types of XSS does XSS Radar detect?
+
+XSS Radar detects reflected XSS. Self-XSS, DOM based XSS and stored XSS cannot be detected with this extension.
