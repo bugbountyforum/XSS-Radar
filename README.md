@@ -16,10 +16,6 @@ Visit a target page, open the extension and select **Fuzz!**
 
 <img src="https://user-images.githubusercontent.com/4115778/27141364-df47a638-511f-11e7-8838-968e496a0d0f.png" alt="Screenshot of extension Fuzz window" height="450"/>
 
-## How do I contribute?
-* If you're a Bug Bounty Forum member, please drop @smiegles a message so you can start contributing.
-* If not, feel free to get in touch via Twitter!
-
 ### Contexts and tests
 We've developed contexts – and their respective tests – in a fully modular fashion. By doing so, we've made it easy to contribute new methodologies to Radar's Scanner module.
 
@@ -44,8 +40,9 @@ We've integrated the following XSS payload classes. These can be found in <a hre
 * Script injections 
 * Generic tag strings
 
-## Who made this?
-This tool is a Bug Bounty Forum project with the following contributors:
+## Contributors
+XSS Radar is a Bug Bounty Forum project with the following contributors. It's community-driven, and we truly appreciate your [contributions](https://github.com/bugbountyforum/XSS-Radar/blob/master/CONTRIBUTING.md)!
+
 * Ibram Marzouk
 * Anshuman Bhartiya
 * Rafal Janicki
