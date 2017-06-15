@@ -1,7 +1,7 @@
 <img src="https://user-images.githubusercontent.com/4115778/27097021-d8f2a73e-506a-11e7-8dd2-0ec615322516.png" height="250"></img>
 
 [![GitHub issues](https://img.shields.io/github/issues/bugbountyforum/XSS-Radar.svg?style=flat-square)](https://github.com/bugbountyforum/XSS-Radar/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/github.com/bugbountyforum/XSS-Radar.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/bugbountyforum/XSS-Radar.svg?style=social)](https://twitter.com/intent/tweet?text=XSS Radar&url=https://github.com/bugbountyforum/XSS-Radar%5Bobject%20Object%5D)
 
 XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
 
