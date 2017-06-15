@@ -18,6 +18,10 @@ p {
   font-size: 15px;
 }
 
+.description {
+  opacity: 0.6;
+}
+
 .button {
   border-radius: 4px;
   width: 100%;
