@@ -17,7 +17,7 @@
   "options_page": "src/options/index.html",
   "browser_action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "browser action demo",
+    "default_title": "XSS Radar",
     "default_popup": "src/browser_action/browser_action.html"
   },
   "permissions": [
