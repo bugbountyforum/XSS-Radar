@@ -1,9 +1,20 @@
-<img src="https://user-images.githubusercontent.com/4115778/27097021-d8f2a73e-506a-11e7-8dd2-0ec615322516.png" height="250"></img>
+<div align="center">
+<img align="center" src="https://user-images.githubusercontent.com/4115778/27097021-d8f2a73e-506a-11e7-8dd2-0ec615322516.png" height="200"></img>
+</div>
+<div align="center">
+<b>Cross-site scripting discovery</b>
+<br/>
+A Chrome extension for fast and easy XSS fuzzing
+<br/>
+<br/>
 
 [![GitHub issues](https://img.shields.io/github/issues/bugbountyforum/XSS-Radar.svg?style=flat-square)](https://github.com/bugbountyforum/XSS-Radar/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/github.com/bugbountyforum/XSS-Radar.svg?style=social)](https://twitter.com/intent/tweet?text=XSS%20Radar:%20https://github.com/bugbountyforum/XSS-Radar&url=https://github.com/bugbountyforum/XSS-Radar%5Bobject%20Object%5D)
-
+</div>
+<hr/>
+<div align="center">
 XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
+</div>
 
 ## How do I install it?
 At present, we're only supporting the widely used **Google Chrome**. XSS Radar takes the form of a browser extension, so we hope to support Firefox in the future.
@@ -55,7 +66,7 @@ XSS Radar is a Bug Bounty Forum project with the following contributors. It's co
 * Olivier beg
 * Yasin Soliman
 
----
+<hr/>
 
 ## FAQ
 
