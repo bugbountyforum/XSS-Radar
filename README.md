@@ -13,7 +13,7 @@ A Chrome extension for fast and easy XSS fuzzing
 </div>
 <hr/>
 <div align="center">
-XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
+XSS Radar is a tool that detects parameters and fuzzes them for <a href="https://github.com/bugbountyforum/XSS-Radar/wiki/What-is-cross-site-scripting%3F">cross-site scripting</a> vulnerabilities.<br/>It's also the first tool developed by the <a href="https://bugbountyforum.com">Bug Bounty Forum</a> community! 
 </div>
 
 ## How do I install it?
